@@ -1,0 +1,190 @@
+<resources>
+    <style name="Theme.MolecuQ.Light" parent="android:Theme.Material.Light.NoActionBar">
+    </style>
+    <style name="ShapeAppearanceOverlay.App.CornerSize8dp" parent="">
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="MedicationInfoText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+    <style name="InfoLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+    <style name="Theme.QuantumApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_dark</item>
+        <item name="colorPrimaryVariant">@color/purple_dark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal</item>
+        <item name="colorSecondaryVariant">@color/teal</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item><!-- Assuming you add an Inter font -->
+    </style>
+
+    <style name="QuantumGateButton.Indigo" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/indigo</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/purple_light</item>
+    </style>
+
+    <style name="QuantumGateButton.Teal" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/teal</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/green_light</item>
+    </style>
+
+    <style name="QuantumGateButton.Orange" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/orange</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/orange_light</item>
+    </style>
+
+    <style name="QuantumGateButton.Yellow" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/yellow</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/yellow_light</item>
+    </style>
+
+    <style name="QuantumGateButton.YellowLight" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/yellow_light</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/yellow</item>
+    </style>
+
+    <style name="QuantumGateButton.Rose" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/rose</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/rose</item>
+    </style>
+
+    <style name="QuantumGateButton.GreenDark" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/green_dark</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/green_light</item>
+    </style>
+
+    <style name="QuantumControlButton.Blue" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/blue_light</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/blue_dark</item>
+    </style>
+
+    <style name="QuantumControlButton.Green" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/green_light</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/green_dark</item>
+    </style>
+
+    <style name="QuantumControlButton.Purple" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/purple_light</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/purple_dark</item>
+    </style>
+
+    <style name="QuantumControlButton.Gray" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="backgroundTint">@color/gray_dark</item>
+        <item name="android:textColor">@color/gray_dark</item>
+        <item name="android:textStyle">bold</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:paddingTop">14dp</item>
+        <item name="android:paddingBottom">14dp</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">8dp</item>
+        <item name="rippleColor">@color/gray_medium</item>
+    </style>
+
+
+
+
+</resources>

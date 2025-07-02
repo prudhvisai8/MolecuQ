@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_background"
+    android:padding="5dp"
+    tools:context=".QMLPredictionActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp">
+
+            <!-- Top Bar with Back Button and Title -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:layout_marginBottom="32dp"
+                android:background="@drawable/toolbar_background"
+                android:elevation="12dp"
+                android:outlineProvider="background"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:translationZ="12dp">
+
+                <ImageButton
+                    android:id="@+id/btnBack"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/ic_back"
+                    android:padding="12dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toStartOf="@id/placeholderRight"
+                    android:layout_toEndOf="@id/btnBack"
+                    android:paddingHorizontal="16dp"
+                    android:shadowColor="#FFFFFF"
+                    android:shadowDx="2"
+                    android:shadowDy="2"
+                    android:shadowRadius="2"
+                    android:text="Quantum Simulator"
+                    android:textAlignment="center"
+                    android:textColor="@color/gray_dark"
+                    android:textSize="25sp"
+                    android:textStyle="normal" />
+
+                <View
+                    android:id="@+id/placeholderRight"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="8dp" />
+            </RelativeLayout>
+
+
+            <!-- Current Quantum State Display -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:outlineProvider="background"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp"
+                app:strokeColor="@color/card_background"
+                app:strokeWidth="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Current Quantum State:"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="22dp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/quantumStateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_background"
+                        android:fontFamily="monospace"
+                        android:gravity="center"
+                        android:minHeight="64dp"
+                        android:padding="12dp"
+                        android:text="Loading..."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+
+                    <TextView
+                        android:id="@+id/measurementResultTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text=""
+                        android:textColor="@color/green_light"
+                        android:textSize="20sp"
+                        android:textStyle="normal" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Bloch Sphere Visualization -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:outlineProvider="background"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp"
+                app:strokeColor="@color/blue_light"
+                app:strokeWidth="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Individual Qubit Probabilities (Simplified Bloch Spheres):"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="22dp"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <com.quantum.molecuq.BlochSphereView
+                            android:id="@+id/blochSphereQ1"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_marginEnd="32dp" />
+
+                        <com.quantum.molecuq.BlochSphereView
+                            android:id="@+id/blochSphereQ2"
+                            android:layout_width="140dp"
+                            android:layout_height="140dp"
+                            android:layout_marginStart="32dp" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="(Position on sphere indicates probability of being in |0⟩ or |1⟩ states. For entangled states, individual qubit spheres show marginal probabilities.)"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray_medium"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Measurement Probabilities -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:outlineProvider="background"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp"
+                app:strokeColor="@color/card_background"
+                app:strokeWidth="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="20dp"
+                        android:text="Measurement Probabilities:"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="22dp"
+                        android:textStyle="normal" />
+
+                    <GridLayout
+                        android:id="@+id/probabilitiesGridLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="2"
+                        android:columnOrderPreserved="false"
+                        android:padding="12dp"
+                        android:rowCount="2">
+
+                        <!-- Programmatically populated probability items -->
+
+                    </GridLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="(Size and opacity of circles represent probability)"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray_medium"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Quantum Gates Controls -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:outlineProvider="background"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp"
+                app:strokeColor="@color/border_color"
+                app:strokeWidth="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:text="Apply Quantum Gates:"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="22dp"
+                        android:textStyle="normal" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:alignmentMode="alignMargins"
+                        android:columnCount="2"
+                        android:columnOrderPreserved="false"
+                        android:padding="12dp"
+                        android:rowCount="4">
+
+                        <!-- Hadamard Gates -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnH1"
+                                style="@style/QuantumGateButton.Indigo"
+                                android:text="H (Qubit 1)"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:id="@+id/btnH2"
+                                style="@style/QuantumGateButton.Indigo"
+                                android:layout_marginTop="12dp"
+                                android:text="H (Qubit 2)"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <!-- Pauli-X Gates -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnX1"
+                                style="@style/QuantumGateButton.Teal"
+                                android:text="X (Qubit 1)"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:id="@+id/btnX2"
+                                style="@style/QuantumGateButton.Teal"
+                                android:layout_marginTop="12dp"
+                                android:text="X (Qubit 2)"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <!-- Ry Gate with Slider -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnSpan="2"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <SeekBar
+                                android:id="@+id/ryAngleSlider"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:max="628"
+                                android:maxHeight="12dp"
+                                android:minHeight="12dp"
+                                android:paddingStart="0dp"
+                                android:paddingEnd="0dp"
+                                android:progress="157"
+                                android:progressTint="@color/orange_light"
+                                android:thumbTint="@color/orange" />
+
+                            <TextView
+                                android:id="@+id/ryAngleTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginBottom="12dp"
+                                android:text="Ry Angle: 1.57 rad"
+                                android:textColor="@color/gray_medium"
+                                android:textSize="20sp" />
+
+                            <Button
+                                android:id="@+id/btnRy1"
+                                style="@style/QuantumGateButton.Orange"
+                                android:text="Ry (Qubit 1)"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:id="@+id/btnRy2"
+                                style="@style/QuantumGateButton.Orange"
+                                android:layout_marginTop="12dp"
+                                android:text="Ry (Qubit 2)"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <!-- Phase Gates (S, T) -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnS1"
+                                style="@style/QuantumGateButton.Yellow"
+                                android:text="S (Qubit 1)"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:id="@+id/btnS2"
+                                style="@style/QuantumGateButton.Yellow"
+                                android:layout_marginTop="12dp"
+                                android:text="S (Qubit 2)"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:id="@+id/btnT1"
+                                style="@style/QuantumGateButton.YellowLight"
+                                android:layout_marginTop="12dp"
+                                android:text="T (Qubit 1)"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:id="@+id/btnT2"
+                                style="@style/QuantumGateButton.YellowLight"
+                                android:layout_marginTop="12dp"
+                                android:text="T (Qubit 2)"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <!-- CNOT Gates -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnSpan="2"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnCNOT_Q1Ctrl_Q2Target"
+                                style="@style/QuantumGateButton.Rose"
+                                android:text="CNOT (Q1 Ctrl, Q2 Target)"
+                                android:textSize="12dp" />
+
+                            <Button
+                                android:id="@+id/btnCNOT_Q2Ctrl_Q1Target"
+                                style="@style/QuantumGateButton.Rose"
+                                android:layout_marginTop="12dp"
+                                android:text="CNOT (Q2 Ctrl, Q1 Target)"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+
+                        <!-- SWAP Gate -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_rowWeight="1"
+                            android:layout_columnSpan="2"
+                            android:layout_columnWeight="1"
+                            android:layout_margin="8dp"
+                            android:orientation="vertical">
+
+                            <Button
+                                android:id="@+id/btnSWAP"
+                                style="@style/QuantumGateButton.GreenDark"
+                                android:text="SWAP (Q1 &amp; Q2)"
+                                android:textSize="12dp" />
+                        </LinearLayout>
+                    </GridLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Quantum Circuit History -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:outlineProvider="background"
+                app:cardBackgroundColor="@color/card_background"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="12dp"
+                app:strokeColor="@color/border_color"
+                app:strokeWidth="3dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="24dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="20dp"
+                        android:text="Quantum Circuit History:"
+                        android:textColor="@color/gray_dark"
+                        android:textSize="22dp"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:id="@+id/circuitHistoryLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_background"
+                        android:maxHeight="280dp"
+                        android:orientation="vertical"
+                        android:padding="12dp"
+                        android:scrollbars="vertical" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- Control Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnResetTo00"
+                    style="@style/QuantumControlButton.Blue"
+                    android:text="Reset to |00⟩"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btnCreateBellState"
+                    style="@style/QuantumControlButton.Green"
+                    android:layout_marginTop="20dp"
+                    android:text="Create Entangled Bell State"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btnMeasureState"
+                    style="@style/QuantumControlButton.Purple"
+                    android:layout_marginTop="20dp"
+                    android:text="Measure Quantum State"
+                    android:textSize="12dp" />
+
+                <Button
+                    android:id="@+id/btnFullReset"
+                    style="@style/QuantumControlButton.Gray"
+                    android:layout_marginTop="20dp"
+                    android:text="Full Reset"
+                    android:textSize="12dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

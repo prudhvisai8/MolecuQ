@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "740605798239",
+    "project_id": "molecuq-901d5",
+    "storage_bucket": "molecuq-901d5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740605798239:android:529c8fd64a0dbbb230f8ea",
+        "android_client_info": {
+          "package_name": "com.quantum.molecuq"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqahva7rlkU-7meVICSSej1NTPaGZFKWA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

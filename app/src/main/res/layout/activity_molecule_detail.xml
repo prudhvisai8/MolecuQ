@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingBottom="8dp">
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back" />
+
+            <TextView
+                android:id="@+id/titleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Molecule Name"
+                android:textSize="22sp"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp" />
+        </LinearLayout>
+
+        <!-- Detail Labels -->
+        <TextView android:id="@+id/formulaText" style="@style/InfoLabel" />
+        <TextView android:id="@+id/weightText" style="@style/InfoLabel" />
+        <TextView android:id="@+id/structureText" style="@style/InfoLabel" />
+        <TextView android:id="@+id/typeText" style="@style/InfoLabel" />
+        <TextView android:id="@+id/usageText" style="@style/InfoLabel" />
+        <TextView android:id="@+id/bondsText" style="@style/InfoLabel" />
+        <TextView android:id="@+id/discoveryText" style="@style/InfoLabel" />
+    </LinearLayout>
+</ScrollView>

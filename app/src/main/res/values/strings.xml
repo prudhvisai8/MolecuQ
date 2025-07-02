@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MolecuQ</string>
+    <string name="back_button">Back</string>
+    <string name="logo_description">MolecuQ App Logo</string>
+    <string name="profile">Profile Picture</string>
+    <string name="searchicon">🔍</string>
+    <string name="search_hint">Search...</string>
+    <string name="advertisement_description">Advertisement Image</string>
+    <string name="Proteins">Proteins</string>
+    <string name="medications">Medications</string>
+    <string name="toxicity_check">Toxicity Check</string>
+    <string name="default_web_client_id">Web client Id</string>
+    <string name="molecule">Molecule</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="login">Login</string>
+    <string name="hello">Hello world</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logout">Log out</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="error_message">Error!</string>
+    <string name="copy">Copy</string>
+    <string name="copied">Copied!</string>
+    <string name="copied_to_clipboard">%1$s copied to clipboard</string>
+    <string name="clipboard_empty">Clipboard is empty</string>
+    <string name="clipboard_cleared">Clipboard cleared</string>
+    <string name="clear_search">Clear search input</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="search_molecule">Search Molecule</string>
+    <string name="run_q_simulation">Run Q Simulation</string>
+    <string name="analyze_properties">Analyze Properties</string>
+    <string name="quantum_encoding">Quantum Encoding</string>
+    <string name="my_medications">My Medications</string>
+    <string name="molecule_3d_viewer">Molecule 3D Viewer</string>
+
+
+    <string name="upload_file">Upload File</string>
+    <string name="upload_text_file">Upload Text File</string>
+    <string name="select_text_file">Select a text file to upload.</string>
+    <string name="upload_progress">Upload Progress</string>
+    <string name="select_an_image_or_text_file">Select an image or text file to upload.</string>
+    <string name="upload_success">Uploaded successfully</string>
+    <string name="file_selected">File selected</string>
+    <string name="uploading">Uploading</string>
+
+    <string name="phone_number">Phone Number</string>
+    <string name="change_password_desc">Change Password</string>
+    <string name="change_password">Change password</string>
+    <string name="account_settings">Account settings</string>
+    <string name="settings">Settings</string>
+    <string name="full_name">Fullname</string>
+    <string name="email">Email</string>
+    <string name="saved">Saved</string>
+    <string name="notifications">Notifications</string>
+    <string name="Privacy">Privacy</string>
+    <string name="about">About</string>
+    <string name="enter_new_phone_number">Enter new phone number</string>
+    <string name="save_phone_number">Save Phone Number</string>
+    <string name="enter_new_email_address">Enter new email address</string>
+    <string name="save_email_address">Save Email Address</string>
+    <string name="logout_title">Logout</string>
+    <string name="logout_confirmation">Log Out confirmation</string>
+    <string name="phone_settings">Phone Settings</string>
+    <string name="email_settings">Email Settings</string>
+    <string name="saved_items">Saved Items</string>
+    <string name="error_navigation">Error navigating to %s</string>
+    <string name="no_saved_items">No Saved items</string>
+    <string name="saved_items_title">Saved items</string>
+    <string name="edit_profile_title">"Edit profile "</string>
+    <string name="change_profile_image">change profile image</string>
+    <string name="username_hint">User Name</string>
+    <string name="phone_hint">Phone number</string>
+    <string name="email_hint">E-Mail</string>
+    <string name="error_saving_profile">error saving profile</string>
+    <string name="account_settings_title">Account Settings</string>
+    <string name="two_factor_auth">Two-Factor Authentication</string>
+    <string name="two_factor_toggle">Toggle Two-Factor Authentication</string>
+    <string name="export_data">Export Account Data</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="delete_account_title">Delete Account</string>
+    <string name="delete_account_confirmation">Are you sure you want to delete your account? This action cannot be undone.</string>
+    <string name="two_factor_enabled">Two-Factor Authentication enabled</string>
+    <string name="two_factor_disabled">Two-Factor Authentication disabled</string>
+    <string name="error_loading_settings">Error loading settings</string>
+    <string name="error_saving_settings">Error saving settings</string>
+    <string name="error_deleting_account">Error deleting account</string>
+    <string name="error_loading_change_password">Error loading change password screen</string>
+    <string name="change_password_title">Change Password</string>
+    <string name="current_password_hint">Current Password</string>
+    <string name="new_password_hint">New Password</string>
+    <string name="confirm_password_hint">Confirm New Password</string>
+    <string name="logout_successful">Logout successfully</string>
+    <string name="default_username">User Name</string>
+    <string name="default_phone">Phone Number</string>
+    <string name="default_email">E Mail</string>
+    <string name="error_loading_profile_data">Error loading Profile data</string>
+    <string name="error_logout">Logout failed!</string>
+
+    <string name="terms_of_service">Terms of service</string>
+    <string name="privacy_and_policy"><![CDATA[Privacy & policy]]></string>
+    <string name="info">This app is designed to simulate drug interactions using quantum models. Learn, explore, and analyze with our advanced tools.</string>
+    <string name="version_1_0_0">version 1.00</string>
+    <string name="lab">Developer: QuantumTech Labs</string>
+    <string name="contact_support_molecuq_com">Contact: support@MolecuQ.com</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="privacy_policy_effective_date">Effective Date: April 22, 2025</string>
+    <string name="privacy_policy_overview">MolecuQ is committed to respecting and protecting your privacy. Our app empowers researchers and scientists with advanced quantum machine learning tools and molecular simulations to accelerate drug discovery. This Privacy Policy explains what data we collect, how it’s used, your choices, and the safeguards in place to keep it secure.</string>
+    <string name="privacy_policy_info_collect_title">1. Information We Collect</string>
+    <string name="privacy_policy_info_collect">We collect limited information to enhance your experience:\n\n• Personal Data (Optional): Name, Email (only if you register or contact us)\n• Device Data: Device model, OS version, crash logs\n• App Usage: Modules accessed, time spent, settings used\n• Scientific Input Data: Molecular structures, simulation preferences (stored locally unless sync enabled)</string>
+    <string name="privacy_policy_use_data_title">2. How We Use Your Data</string>
+    <string name="privacy_policy_use_data">We use your information to:\n\n• Enhance app performance and user experience\n• Troubleshoot issues and fix bugs\n• Analyze app usage for optimization\n• Personalize scientific tools and simulations\n• Communicate important updates (if opted in)</string>
+    <string name="privacy_policy_data_security_title">3. Data Security</string>
+    <string name="privacy_policy_data_security">We protect your data using:\n\n• Local storage for sensitive inputs (by default)\n• Industry-standard encryption\n• HTTPS protocols for network communications\n• Secure APIs for cloud-based tasks</string>
+    <string name="privacy_policy_data_sharing_title">4. Data Sharing</string>
+    <string name="privacy_policy_data_sharing">We do not sell or rent user data. We may share data only if:\n\n• Required by law\n• Needed to prevent fraud or misuse\n• You provide explicit consent</string>
+    <string name="privacy_policy_third_party_title">5. Third-Party Services</string>
+    <string name="privacy_policy_third_party">MolecuQ integrates with trusted services that adhere to strict privacy standards:\n\n• Firebase Crashlytics – for monitoring app stability\n• GitHub OAuth – secure login mechanism\n• Qiskit, PennyLane APIs – quantum computing and molecular simulation</string>
+    <string name="privacy_policy_user_rights_title">6. Your Rights &amp; Choices</string>
+    <string name="privacy_policy_user_rights">You have full control over your data:\n\n• Request deletion of personal data\n• Opt-out of analytics tracking\n• Manage scientific data locally\n• Contact us to exercise your rights</string>
+    <string name="privacy_policy_contact_title">7. Contact Us</string>
+    <string name="privacy_policy_contact">If you have questions or concerns about this policy:\n📧 support@molecuq.com\n🌐 [www.molecuq.com/privacy-policy](https://www.molecuq.com/privacy-policy)</string>
+    <string name="privacy_policy_updates_title">8. Updates to This Policy</string>
+    <string name="privacy_policy_updates">We may periodically update this Privacy Policy. Changes will be posted in-app or communicated via email (if you’ve subscribed). We encourage you to review the policy regularly.</string>
+
+    <string name="qml_prediction">Quantum ML Prediction</string>
+    <string name="prediction_input">Prediction Input</string>
+    <string name="feature_1">Feature 1</string>
+    <string name="feature_2">Feature 2</string>
+    <string name="algorithm_selection">Select prediction algorithm</string>
+    <string name="run_prediction">Run Prediction</string>
+    <string name="visualization">Visualization</string>
+    <string name="graph_output_desc">Prediction graph output</string>
+    <string name="mae_label">Mean Absolute Error (MAE):</string>
+    <string name="_0_00">0.00</string>
+    <string name="model_configuration">Model Configuration</string>
+    <string name="hyperparameters">Hyperparameters</string>
+    <string name="hyperparameter_adjust">Adjust hyperparameter value</string>
+    <string name="hyperparameter_value_default">50</string>
+    <string name="hyperparameter_value">%d</string>
+    <string name="select_model">Select Model</string>
+    <string name="quantum_svm">Quantum SVM</string>
+    <string name="quantum_nn">Quantum Neural Network</string>
+    <string name="view_results">Results</string>
+    <string name="download_results">Download Results</string>
+    <string name="learning_curve">Learning Curve</string>
+
+    <string name="formula_label">Formula: %1$s</string>
+    <string name="weight_label">Molecular Weight: %1$.2f g/mol</string>
+    <string name="smiles_label">SMILES: %1$s</string>
+    <string name="inchi_label">InChI: %1$s</string>
+    <string name="share">Share</string>
+    <string name="share_title">Share Molecule Info</string>
+    <string name="toxin_copied">Toxin copied</string>
+    <string name="toxin_copied_success">Toxin details copied to clipboard</string>
+    <string name="medicine_copied_success">Medicine details copied to clipboard</string>
+    <string name="toxin_clipboard_format">Name: %1$s\nSource: %2$s\nToxicity: %3$s\nStructure: %4$s\nUse Case: %5$s</string>
+    <string name="medicine_clipboard_format_simple">Name: %1$s\nDescription: %2$s\nDosage: %3$s\nSide Effects: %4$s</string>
+    <string name="search_molecule_hint">Search for a molecule</string>
+    <string name="search_icon_description">Search icon</string>
+
+    <string name="_2d_diagram">2D molecule diagram</string>
+    <string name="_2d_image_label">2D Diagram</string>
+    <string name="_3d_model_viewer">3D molecule model viewer</string>
+    <string name="_3d_model_label">3D Model</string>
+    <string name="placeholder_3d">Placeholder 3d</string>
+
+    <string name="quantum_encoding_info">Quantum Encoding:\nQuantum encoding uses qubits to represent data, leveraging superposition and entanglement.\nUnlike classical bits (0 or 1), qubits can exist in states like |0⟩, |1⟩, or a superposition (α|0⟩ + β|1⟩).\n\nExample: Bit-Flip Encoding with Superposition\nEnter a bit (0 or 1) to encode it into a 3-qubit state for error correction.\nThe visualization below shows the encoded quantum state.</string>
+    <string name="quantum_encoding_info_description">Information about quantum encoding and bit-flip encoding with superposition</string>
+    <string name="enter_bit_hint">Enter bit (0 or 1)</string>
+    <string name="encode_button">Encode Bit</string>
+    <string name="reset_button">Reset</string>
+    <string name="result_default">Result will appear here</string>
+    <string name="invalid_input">Please enter 0 or 1</string>
+    <string name="quantum_state_0">Quantum state: |000⟩ (Encoded 0 with bit-flip protection)</string>
+    <string name="quantum_state_1">Quantum state: |111⟩ (Encoded 1 with bit-flip protection)</string>
+    <string name="superposition">Superposition: %s</string>
+    <string name="qubit_view_description">Quantum state: %s</string>
+    <string name="qubit_state_label">Qubit State: %s</string>
+
+    <string name="simulator_title">Quantum Multi-Qubit Simulator</string>
+    <string name="simulator_subtitle">Encode, generate, visualize, and measure complex multi-qubit states.\nAdjust number of qubits and explore quantum phenomena.</string>
+    <string name="button_encode">Encode</string>
+    <string name="button_measure">Measure</string>
+    <string name="button_reset">Reset</string>
+    <string name="initial_output_text">Welcome! Adjust qubits and press Encode to begin.</string>
+    <string name="qubits_label">Number of Qubits:</string>
+    <string name="visualization_placeholder">Quantum State Visualization Area\n(Amplitudes, Probabilities, Bloch Sphere, etc.)</string>
+    <string name="visualization_placeholder_initial">Quantum State Visualization (Initial |00...0⟩)</string>
+    <string name="qubits_changed_message">Number of qubits changed to %d. State reset. Press Encode.</string>
+    <string name="encoded_1_qubit">1-qubit state encoded! (Q0 in superposition)</string>
+    <string name="encoded_bell_state">2-qubit Bell state |Φ+⟩ encoded!</string>
+    <string name="encoded_ghz_state">3-qubit GHZ state |GHZ⟩ encoded!</string>
+    <string name="encoded_n_qubit">%d-qubit state encoded! (Q0 in superposition)</string>
+    <string name="no_qubits_to_measure">No qubits to measure.</string>
+    <string name="measurement_result">Measurement result: %s</string>
+    <string name="measured_toast">Measured: %s</string>
+    <string name="simulator_reset_message">Simulator reset. Press Encode to generate a new state.</string>
+    <string name="simulator_reset_toast">Simulator reset</string>
+    <string name="circuit_history_label">Circuit History:</string>
+    <string name="no_qubits_selected">no qubits selected</string>
+    <string name="error_loading_profile">Loading profile</string>
+    <string name="no_gates_applied_yet">No gates applied yet</string>
+
+    <!-- New String Array for Spinner -->
+    <string-array name="prediction_algorithms">
+        <item>Logistic Regression</item>
+        <item>Support Vector Machine (SVM)</item>
+        <item>Neural Network</item>
+        <item>K-Nearest Neighbors (KNN)</item>
+    </string-array>
+    <string name="app_title">Prediction Dashboard</string>
+
+    <string name="section_title_data_management">Data Management:</string>
+    <string name="button_upload_data">Load Data (CSV)</string>
+    <string name="hint_data_display">Uploaded or simulated data will appear here...</string>
+    <string name="button_sort_data">Sort Data</string>
+    <string name="button_filter_data">Filter Data</string>
+
+    <string name="section_title_prediction_input">Prediction Input:</string>
+    <string name="hint_prediction_input">Enter value for prediction (e.g., 8.5)</string>
+    <string name="button_generate_prediction">Generate Prediction</string>
+    <string name="label_predicted_value_placeholder">Predicted Value: -</string>
+    <string name="label_predicting">Predicting...</string>
+    <string name="label_predicted_value">Predicted: %1$s</string>
+    <string name="label_prediction_error">Prediction Error!</string>
+
+    <string name="section_title_prediction_graph">Prediction Graph:</string>
+
+    <!-- Toasts and Error Messages -->
+    <string name="permission_denied_storage">Storage permission denied. Cannot load files.</string>
+    <string name="toast_file_selected">File selected: %1$s</string>
+    <string name="toast_dummy_data_loaded">Initial dummy data loaded!</string>
+    <string name="toast_no_file_selected">No file selected.</string>
+    <string name="toast_data_loaded_success">Data loaded successfully!</string>
+    <string name="toast_data_parse_error">Error parsing data: no valid points found.</string>
+    <string name="toast_file_read_error">Error reading file: %1$s</string>
+
+    <string name="toast_no_data_to_sort">No data available to sort.</string>
+    <string name="toast_data_sorted">Data sorted: %1$s</string>
+    <string name="toast_no_data_to_filter">No data available to filter.</string>
+    <string name="toast_data_filtered_by">Data filtered by: %1$s</string>
+    <string name="toast_invalid_filter_input">Invalid filter value. Please enter a number.</string>
+
+    <string name="toast_enter_value_for_prediction">Please enter a value for prediction.</string>
+    <string name="toast_invalid_number_format">Invalid number format. Please enter a valid number.</string>
+    <string name="toast_no_data_for_prediction">No data available to make a prediction. Please load data first.</string>
+    <string name="toast_prediction_complete">Prediction complete!</string>
+    <string name="toast_prediction_error">Prediction error: %1$s</string>
+
+    <!-- Chart Legends -->
+    <string name="chart_legend_data_points">Historical Data</string>
+    <string name="chart_legend_predicted_point">Predicted Point</string>
+
+    <string name="error_current_password_required">Current password is required</string>
+    <string name="error_new_password_required">New password is required</string>
+    <string name="error_new_password_length">Password must be at least 8 characters</string>
+    <string name="error_confirm_password_required">Confirm password is required</string>
+    <string name="error_password_mismatch">Passwords do not match</string>
+    <string name="error_incorrect_current_password">Incorrect current password</string>
+    <string name="error_password_change_failed">Failed to change password</string>
+    <string name="password_changed_successfully">Password changed successfully</string>
+    <string name="error_user_not_authenticated">User not authenticated</string>
+    <string name="error_reauthentication_required">Please log in again to change your password</string>
+
+    <string name="profile_title">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="profile_image_description">User profile image</string>
+    <string name="latest_simulation">Latest Molecular Simulation</string>
+    <string name="quantum_ml_settings">Quantum ML Settings</string>
+    <string name="achievements">Achievements</string>
+    <!-- Dialogs -->
+    <string name="dialog_title_sort_data">Sort Data By:</string>
+    <string name="dialog_title_filter_data">Filter Data (Value > X)</string>
+    <string name="dialog_message_filter_data">Enter a minimum value to filter data points:</string>
+    <string name="dialog_button_filter">Filter</string>
+    <string name="dialog_button_cancel">Cancel</string>
+    <string name="hint_filter_value_input">Enter value (e.g., 15.0)</string>
+    <string name="instructions_text">
+        • Start by clicking \"Reset to |00⟩\" or \"Create Entangled Bell State\".\n
+        • Apply various quantum gates (H, X, Ry, CNOT, SWAP, S, T) to transform the qubit states.\n
+        • Observe the current quantum state and individual qubit probabilities on the Bloch Spheres.\n
+        • Click \"Measure Quantum State\" to collapse the superposition and get a classical result.\n
+        • Use \"Full Reset\" to clear the circuit and start fresh.
+    </string>
+    <string name="about_simulator_text">
+        This app provides an interactive simulation of basic quantum computing concepts
+        using a 2-qubit system.\n\n
+        **Superposition:** Qubits can exist in a combination of |0⟩ and |1⟩ states simultaneously.\n\n
+        **Entanglement:** Two or more qubits can become linked such that the state of one instantly
+        influences the others, regardless of distance. The Bell state is a prime example.\n\n
+        **Quantum Gates:** These are operations (like H, X, Ry, CNOT, SWAP) that manipulate the
+        quantum states of qubits.\n\n
+        **Measurement:** The act of observing a qubit collapses its superposition into a definite
+        classical state (|0⟩ or |1⟩) based on probabilities.\n\n
+        *Disclaimer: This simulator uses real-valued amplitudes for simplicity. Real quantum
+        mechanics involves complex numbers for amplitudes and phases, which are crucial for
+        gates like Rz, S, and T to show their full effect.*
+    </string>
+    <string name="two_factor_enabled_toast">Two-Factor Authentication Enabled</string>
+    <string name="two_factor_disabled_toast">Two-Factor Authentication Disabled</string>
+    <string name="export_data_toast">Preparing your data for export. This may take a moment.</string>
+    <string name="delete_account_dialog_title">Confirm Account Deletion</string>
+    <string name="delete_account_dialog_message">Are you sure you want to permanently delete your account? This action cannot be undone.</string>
+    <string name="delete_account_dialog_positive_button">Delete</string>
+    <string name="delete_account_dialog_negative_button">Cancel</string>
+    <string name="delete_account_toast">Your account is being deleted. You will be logged out shortly.</string>
+
+    <string name="molecular_viewer_title">Molecular Viewer</string>
+    <string name="search_compound_hint">Search molecule, protein, drug...</string>
+    <string name="view_2d">2D View</string>
+    <string name="view_3d">3D View</string>
+    <string name="molecular_image_desc">Molecular structure image</string>
+    <string name="compound_name_placeholder">Search and select a compound</string>
+
+    <string name="compound_type_format">Type: %s</string>
+    <string name="not_available_short">N/A</string>
+
+    <string name="tab_overview">Overview</string>
+    <string name="tab_structure">Structure</string>
+    <string name="tab_properties">Properties</string>
+    <string name="fab_actions_desc">More actions</string>
+    <string name="back_button_desc">Back button</string>
+
+    <string name="filter_by_type">Filter by Type</string>
+    <string name="filter_all">All</string>
+    <string name="filter_molecule">Molecule</string>
+    <string name="filter_protein">Protein</string>
+    <string name="filter_drug">Drug</string>
+    <string name="sort_by">Sort By</string>
+    <string name="sort_name">Name (A-Z)</string>
+    <string name="sort_type">Type</string>
+    <string name="apply">Apply</string>
+    <string name="filter_button_desc">Filter and sort options</string>
+    <string name="delete_account_confirm_title">Delete Account</string>
+    <string name="delete_account_confirm_message">Are you sure you want to delete your account? This action cannot be undone.</string>
+    <string name="delete_account_positive_button">Delete</string>
+    <string name="delete_account_negative_button">Cancel</string>
+    <string name="account_deleted_toast">Account deleted successfully!</string>
+    <string name="dialog_cancel_toast">Action cancelled.</string>
+</resources>

@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F8FF"
+    android:padding="16dp"
+    tools:context=".RunQSimulationActivity">
+
+  <ImageButton
+      android:id="@+id/backButton"
+      android:layout_width="48dp"
+      android:layout_height="48dp"
+      android:background="?attr/selectableItemBackgroundBorderless"
+      android:contentDescription="Go back to previous screen"
+      android:src="@drawable/ic_back"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:tint="#3F51B5" />
+
+  <TextView
+      android:id="@+id/tvTitle"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="8dp"
+      android:text="Single Qubit Simulator"
+      android:textAlignment="center"
+      android:textColor="#3F51B5"
+      android:textSize="24sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/backButton"
+      app:layout_constraintTop_toTopOf="parent" />
+
+  <View
+      android:id="@+id/divider1"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="16dp"
+      android:background="#CCCCCC"
+      android:importantForAccessibility="no"
+      app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+  <TextView
+      android:id="@+id/tvInitializeHeader"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Initialize Qubit State (|ψ⟩ = α|0⟩ + β|1⟩)"
+      android:textColor="#2196F3"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/divider1" />
+
+  <TextView
+      android:id="@+id/tvAmplitudeInputDescription"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="Enter complex amplitudes for α and β. Values will be normalized."
+      android:textSize="14sp"
+      android:textColor="#555555"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvInitializeHeader" />
+
+  <TextView
+      android:id="@+id/tvAmplitude0"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="α (|0⟩ amplitude):"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvAmplitudeInputDescription" />
+
+  <EditText
+      android:id="@+id/etAmplitude0Real"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="Real part for alpha"
+      android:inputType="numberSigned|numberDecimal"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toStartOf="@+id/etAmplitude0Imag"
+      app:layout_constraintHorizontal_weight="1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvAmplitude0" />
+
+  <EditText
+      android:id="@+id/etAmplitude0Imag"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="Imaginary part for alpha"
+      android:inputType="numberSigned|numberDecimal"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_weight="1"
+      app:layout_constraintStart_toEndOf="@+id/etAmplitude0Real"
+      app:layout_constraintTop_toBottomOf="@id/tvAmplitude0" />
+
+  <TextView
+      android:id="@+id/tvAmplitude1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:text="β (|1⟩ amplitude):"
+      android:textSize="16sp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/etAmplitude0Real" />
+
+  <EditText
+      android:id="@+id/etAmplitude1Real"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="Real part for beta"
+      android:inputType="numberSigned|numberDecimal"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toStartOf="@+id/etAmplitude1Imag"
+      app:layout_constraintHorizontal_weight="1"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvAmplitude1" />
+
+  <EditText
+      android:id="@+id/etAmplitude1Imag"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:hint="Imaginary part for beta"
+      android:inputType="numberSigned|numberDecimal"
+      android:minHeight="48dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_weight="1"
+      app:layout_constraintStart_toEndOf="@+id/etAmplitude1Real"
+      app:layout_constraintTop_toBottomOf="@id/tvAmplitude1" />
+
+  <Button
+      android:id="@+id/btnInitialize"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Initialize Qubit State"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/etAmplitude1Real" />
+
+  <View
+      android:id="@+id/divider2"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="16dp"
+      android:background="#CCCCCC"
+      android:importantForAccessibility="no"
+      app:layout_constraintTop_toBottomOf="@id/btnInitialize" />
+
+  <TextView
+      android:id="@+id/tvGatesHeader"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Apply Quantum Gates"
+      android:textColor="#2196F3"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/divider2" />
+
+  <GridLayout
+      android:id="@+id/gateGridLayout"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:columnCount="3"
+      android:orientation="horizontal"
+      android:rowCount="2"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvGatesHeader">
+
+    <Button
+        android:id="@+id/btnHadamard"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:text="H (Hadamard)" />
+
+    <Button
+        android:id="@+id/btnPauliX"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:text="X (Pauli-X / NOT)" />
+
+    <Button
+        android:id="@+id/btnPauliY"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:text="Y (Pauli-Y)" />
+
+    <Button
+        android:id="@+id/btnPauliZ"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:text="Z (Pauli-Z)" />
+
+    <Button
+        android:id="@+id/btnPhaseS"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:text="S (Phase π/2)" />
+
+    <Button
+        android:id="@+id/btnPhaseT"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="4dp"
+        android:text="T (Phase π/4)" />
+
+  </GridLayout>
+
+  <View
+      android:id="@+id/divider3"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      android:layout_marginTop="16dp"
+      android:background="#CCCCCC"
+      android:importantForAccessibility="no"
+      app:layout_constraintTop_toBottomOf="@id/gateGridLayout" />
+
+  <TextView
+      android:id="@+id/tvMeasureHeader"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Measure Qubit and Current State"
+      android:textColor="#2196F3"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/divider3" />
+
+  <Button
+      android:id="@+id/btnMeasure"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#FF9800"
+      android:text="Measure Qubit"
+      android:textColor="#FFFFFF"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/tvMeasureHeader" />
+
+  <Button
+      android:id="@+id/btnReset"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="8dp"
+      android:backgroundTint="#F44336"
+      android:text="Reset Qubit to |0⟩"
+      android:textColor="#FFFFFF"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/btnMeasure" />
+
+  <TextView
+      android:id="@+id/tvStateDetails"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      android:text="Current Qubit State:\nα: 0.00 + 0.00i\nβ: 0.00 + 0.00i\n\nP(|0⟩): 0.00%\nP(|1⟩): 0.00%\n\n(State updates after initialization or gate application)"
+      android:textColor="#333333"
+      android:textSize="16sp"
+      android:textStyle="bold"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/btnReset"
+      app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

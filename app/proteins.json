@@ -1,0 +1,28 @@
+{
+  "proteins": [
+    {
+      "name": "Cytochrome c",
+      "function": "Electron transport",
+      "organism": "Horse",
+      "sequence": "MGDVEKGKKIFIMKCSQCHTVEKGGKHKTGPNLHGLFGRKTGQAPGFSYTDANKNKGITWGEETLMEYLENPKKYIPGTKMIFAGIKKKGERADLIAYLKKATNE"
+    },
+    {
+      "name": "Myoglobin",
+      "function": "Oxygen storage",
+      "organism": "Human",
+      "sequence": "MVLSEGEWQLVLHVWAKVEADVAGHGQDILIRLFKSHPETLEKFDRFKHLKTEAEMKASEDLKKHGVTVLTALGAILKKKGHHEAELKPLAQSHATKHKIPVKYLEFISECIIQVLQSKHPGDFGADAQGAMNKALELFRKDIAAKYKELGYQG"
+    },
+    {
+      "name": "Hemoglobin subunit alpha",
+      "function": "Oxygen transport",
+      "organism": "Human",
+      "sequence": "MVLSPADKTNVKAAWGKVGAHAGEYGAEALERMFLSFPTTKTYFPHFDLSHGSAQVKGHGAKVAAALTKVGAAQVGDEVDEVWGGADAGHLLDDLPGALSALSDLHAHKLRVDPVNFKLLSHCLLVTLAAHLPAEFTPAVHASLDKFLASVSTVLTSKYR"
+    },
+    {
+      "name": "Insulin",
+      "function": "Glucose regulation",
+      "organism": "Human",
+      "sequence": "MALWMRLLPLLALLALWGPDPASQAFVKQHLCGSHLVEALYLVCGERGFFYTPKTRREAEDLQVGQVELGGGPGAGSLQPLALEGSLQKRGIVEQCCTSICSLYQLENYCN"
+    }
+  ]
+}

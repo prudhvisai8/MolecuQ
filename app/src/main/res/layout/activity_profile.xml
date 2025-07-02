@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/profile_image_description"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_account"
+            tools:ignore="ImageContrastCheck" />
+
+        <!-- Username -->
+        <TextView
+            android:id="@+id/tvUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="@string/default_username"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="John Doe" />
+
+        <!-- Phone -->
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:text="@string/default_phone"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            tools:text="+1 (555) 123-4567" />
+
+        <!-- Email -->
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/default_email"
+            android:textColor="#666666"
+            android:textSize="16sp"
+            tools:text="john.doe@example.com" />
+
+        <!-- Edit Profile Button -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="@drawable/button_gradient"
+            android:text="@string/edit_profile"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/changePasswordOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="16dp"
+            android:text="@string/change_password"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_lock"
+            android:drawablePadding="12dp" />
+
+        <TextView
+            android:id="@+id/accountSettingsOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="16dp"
+            android:text="@string/account_settings"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/profile_settings"
+            android:drawablePadding="12dp" />
+
+        <TextView
+            android:id="@+id/notificationsOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="16dp"
+            android:text="@string/notifications"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_notification"
+            android:drawablePadding="12dp" />
+
+        <TextView
+            android:id="@+id/savedOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="16dp"
+            android:text="@string/saved_items"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/download"
+            android:drawablePadding="12dp" />
+
+        <TextView
+            android:id="@+id/privacyOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="16dp"
+            android:text="@string/privacy_policy"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/privacy"
+            android:drawablePadding="12dp" />
+
+        <TextView
+            android:id="@+id/aboutOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="16dp"
+            android:text="@string/about"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/ic_about"
+            android:drawablePadding="12dp" />
+
+        <!-- Logout Option -->
+        <TextView
+            android:id="@+id/logoutOption"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:layout_marginBottom="32dp"
+            android:background="?attr/selectableItemBackground"
+            android:padding="16dp"
+            android:text="@string/logout"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:drawableStart="@drawable/logout"
+            android:drawablePadding="12dp" />
+
+
+    </LinearLayout>
+</ScrollView>
